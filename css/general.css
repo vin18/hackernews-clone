@@ -10,7 +10,7 @@
   Bold: 700
 
   02. Colors
-  #4C3F91
+  #5747a8
 
   03. Shadows
   0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -20,6 +20,11 @@
   05. Whitespace (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 **/
+
+:root {
+  --bg-primary: #5747a8;
+  --text-primary: #f5f5f5;
+}
 
 *,
 *::before,
@@ -35,4 +40,27 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
 }
