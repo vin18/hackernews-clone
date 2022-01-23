@@ -22,8 +22,17 @@
 **/
 
 :root {
+  --primary-color: #5747a8;
+
   --bg-primary: #5747a8;
-  --text-primary: #f5f5f5;
+  --text-black-primary: #333;
+  --text-white-primary: #f5f5f5;
+
+  --box-shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --box-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --box-shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 *,
@@ -41,15 +50,33 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
-  color: var(--text-primary);
+  color: var(--text-black-primary);
 }
 
 ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.mr-2 {
+  margin-right: 4px;
+}
+
+.ml-2 {
+  margin-left: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--text-black-primary);
+}
+
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -59,6 +86,10 @@ ul {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .items-center {
