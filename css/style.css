@@ -1,48 +1,108 @@
 .header {
   color: var(--text-white-primary);
   background-color: var(--bg-primary);
-  padding: 2rem;
-  box-shadow: var(--box-shadow-lg);
+  padding: 1rem;
+  box-shadow: var(--box-shadow-md);
+}
+
+.header__links a {
+  color: var(--text-white-primary);
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.header__links a:not(:last-child)::after {
+  content: '|';
+  margin: 4px;
 }
 
 .main {
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
   padding: 2rem;
-  height: 85vh;
+  height: 82vh;
+  background-color: #f5f5f5f6;
 }
 
-.news-item {
-  border: 1px solid var(--primary-color);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: var(--box-shadow-md);
-  transition: all 200ms;
-  margin-bottom: 2.4rem;
+.logout a {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: var(--text-white-primary);
+  text-decoration: none;
 }
 
-.news-item:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--box-shadow-lg);
+.logo {
+  font-size: 1.8rem;
+  margin-right: 20px;
+}
+
+.news {
+  color: #333;
+}
+
+.news span {
+  color: #999;
+  font-size: 1.6rem;
+}
+
+.news__item {
+  font-size: 1.6rem;
+}
+
+.news__item-parent {
+  margin-bottom: 1.2rem;
+}
+
+.news__item-parent p {
+  font-size: 1.4rem;
+}
+
+.news__number {
+  margin-right: 1rem;
+}
+
+.news:hover {
+  text-decoration: none;
+}
+
+.news__item-website {
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+  color: #777;
+}
+
+.news__item-website a {
+  color: #777;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px 0;
+  background-color: #f5f5f5f6;
+  border-top: 2px solid var(--primary-color);
+}
+
+footer ul {
+  margin-bottom: 5px;
+}
+
+footer li {
+  margin-bottom: 6px;
+}
+
+footer li a {
+  display: inline-block;
+  color: var(--text-black-primary);
+}
+
+footer li a:hover {
   cursor: pointer;
 }
 
-.news-item:active {
-  transform: translateY(-1px);
-  box-shadow: var(--box-shadow-md);
-}
-
-.news-item__points {
-  color: var(--primary-color);
-  margin-right: 3rem;
-  font-weight: bold;
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-.news-item__bookmark {
-  color: var(--primary-color);
-}
-
-.fa-heart--red {
-  color: red;
+footer li:not(:last-child) a::after {
+  content: '|';
+  margin: 4px;
 }
