@@ -18,10 +18,11 @@
 }
 
 .main {
-  margin: 1rem auto 0 auto;
+  margin: 0 auto 20px auto;
   padding: 2rem;
   height: 82vh;
   background-color: #f5f5f5f6;
+  overflow: auto;
 }
 
 .logout a {
@@ -36,8 +37,9 @@
   margin-right: 20px;
 }
 
-.news {
+.news-item {
   color: #333;
+  margin-bottom: 20px;
 }
 
 .news span {
@@ -45,7 +47,7 @@
   font-size: 1.6rem;
 }
 
-.news__item {
+.news__item-title {
   font-size: 1.6rem;
 }
 
@@ -59,6 +61,8 @@
 
 .news__number {
   margin-right: 1rem;
+  color: #828282;
+  font-size: 14px;
 }
 
 .news:hover {
